@@ -13,7 +13,6 @@ export const AskCard = ({
 }) => {
   const [showAnswer, setShowAnswer] = useState(false);
   const { data: answer } = AnswerService.useGetAnswerWithAskById(id);
-  console.log(answer);
   const handleShowAnswer = () => {
     setShowAnswer(!showAnswer);
   };
